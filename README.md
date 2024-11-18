@@ -95,8 +95,8 @@ cd biblioteca-digital
 ## 👥 Autor
 
 [Tu Nombre]
-- GitHub: [@usuario](https://github.com/usuario)
-- LinkedIn: [Tu Perfil](https://linkedin.com/in/usuario)
+- GitHub: [@1_r0ger_3](https://github.com/usuario)
+- LinkedIn: [[Tu Perfil](https://www.linkedin.com/in/roger-munevar-809b1b233/)
 
 ## 📄 Licencia
 
