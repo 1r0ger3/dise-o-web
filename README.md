@@ -55,5 +55,5 @@ git clone https://github.com/tu-usuario/mi-proyecto-web.git
 ## 👤 Autor
 
 Tu Nombre
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
-- LinkedIn: [Tu Perfil](https://linkedin.com/in/tu-usuario)
+- GitHub: [@1_r0ger_3](https://github.com/1r0ger3)
+- LinkedIn: [Tu Perfil]([https://linkedin.com/in/tu-usuario](https://www.linkedin.com/in/roger-munevar-809b1b233/))
