@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "Estructura inicial del proyecto"
+git branch -M main
+git remote add origin [URL-repositorio]
+git push -u origin main
