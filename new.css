@@ -1,0 +1,28 @@
+/* Reset y configuración base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout con Flexbox */
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Grid para secciones */
+.grid-seccion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+    .contenedor {
+        flex-direction: column;
+    }
+}
