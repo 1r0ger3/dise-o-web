@@ -1,0 +1,26 @@
+{
+  "name": "cafe-andino-website",
+  "version": "1.0.0",
+  "description": "Sitio web para Café Andino - Café Colombiano Premium",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server",
+    "build": "echo 'No build step required'",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": [
+    "cafe",
+    "colombia",
+    "website"
+  ],
+  "author": "Tu Nombre",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "not dead"
+  ]
+}
