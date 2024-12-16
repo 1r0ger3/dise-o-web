@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Andino - Experiencia Cafetera Premium</title>
+    <style>
+        :root {
+            --color-primary: #5D4037;
+            --color-secondary: #8D6E63;
+            --color-background: #F5F5F5;
+            --color-text: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: var(--color-background);
+            color: var(--color-text);
+        }
+
+        header {
+            background: linear-gradient(rgba(93, 64, 55, 0.8), rgba(93, 64, 55, 0.9)), 
+                        url('https://source.unsplash.com/1600x900/?coffee,cafe');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        nav {
+            background-color: var(--color-secondary);
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .seccion {
+            display: none;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        #inicio {
+            display: block;
+        }
+
+        .producto {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            background-color: #f9f5f0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .producto img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .producto-info {
+            padding: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--color-primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #4D3426;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: var(--color-primary);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+
+            .producto {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .producto img {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Café Andino</h1>
+        <p>Experiencia Cafetera Premium desde Colombia</p>
+    </header>
+
+    <nav>
+        <a onclick="mostrarSeccion('inicio')">Inicio</a>
+        <a onclick="mostrarSeccion('nuestrosCafes')">Nuestros Cafés</a>
+        <a onclick="mostrarSeccion('sobreNosotros')">Sobre Nosotros</a>
+        <a onclick="mostrarSeccion('galeria')">Galería</a>
+        <a onclick="mostrarSeccion('contacto')">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <section id="inicio" class="seccion">
+            <h2>Bienvenidos a Café Andino</h2>
+            <p>Descubre la magia de nuestros cafés cultivados en las montañas de Colombia. Cada grano cuenta una historia de tradición, pasión y excelencia.</p>
+            
+            <div class="producto">
+                <img src="https://source.unsplash.com/400x400/?coffee" alt="Café Supremo">
+                <div class="producto-info">
+                    <h3>Café Supremo</h3>
+                    <p>Nuestro buque insignia, un café de tueste medio con notas de chocolate y nuez.</p>
+                    <a href="#" class="btn">Comprar Ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="nuestrosCafes" class="seccion">
+            <h2>Nuestros Cafés</h2>
+            <div class="producto">
+                <img src="https://source.unsplash.com/400x400/?coffee,beans" alt="Café de Altura">
+                <div class="producto-info">
+                    <h3>Café de Altura</h3>
+                    <p>Cultivado a más de 1,800 metros sobre el nivel del mar, con un sabor único e intenso.</p>
+                    <a href="#" class="btn">Ver Detalles</a>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="https://source.unsplash.com/400x400/?coffee,roasted" alt="Blend Especial">
+                <div class="producto-info">
+                    <h3>Blend Especial</h3>
+                    <p>Combinación única de granos de las mejores regiones cafeteras de Colombia.</p>
+                    <a href="#" class="btn">Ver Detalles</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobreNosotros" class="seccion">
+            <h2>Nuestra Historia</h2>
+            <p>Desde 1990, Café Andino ha sido sinónimo de calidad y tradición cafetera. Trabajamos directamente con pequeños productores, garantizando un producto de primera categoría y un impacto social positivo.</p>
+            
+            <h3>Nuestro Compromiso</h3>
+            <ul>
+                <li>Comercio justo con agricultores</li>
+                <li>Prácticas sostenibles de cultivo</li>
+                <li>Calidad premium en cada taza</li>
+            </ul>
+        </section>
+
+        <section id="galeria" class="seccion">
+            <h2>Galería de Café</h2>
+            <div class="galeria">
+                <img src="https://source.unsplash.com/400x400/?coffee,farm" alt="Finca Cafetera">
+                <img src="https://source.unsplash.com/400x400/?coffee,harvest" alt="Cosecha de Café">
+                <img src="https://source.unsplash.com/400x400/?coffee,roasting" alt="Tostado de Café">
+                <img src="https://source.unsplash.com/400x400/?coffee,brewing" alt="Preparación de Café">
+                <img src="https://source.unsplash.com/400x400/?coffee,cup" alt="Taza de Café">
+                <img src="https://source.unsplash.com/400x400/?coffee,beans" alt="Granos de Café">
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion">
+            <h2>Contáctanos</h2>
+            <form id="formularioContacto">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <textarea placeholder="Tu Mensaje" required></textarea>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+
+            <div>
+                <h3>Información de Contacto</h3>
+                <p>Teléfono: +57 123 456 7890</p>
+                <p>Correo: info@cafeandino.com</p>
+                <p>Dirección: Calle del Café, Medellín, Colombia</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Café Andino - Todos los derechos reservados</p>
+        <div>
+            <a href="#">Política de Privacidad</a> | 
+            <a href="#">Términos de Servicio</a>
+        </div>
+    </footer>
+
+    <script>
+        function mostrarSeccion(nombreSeccion) {
+            const secciones = document.querySelectorAll('.seccion');
+            secciones.forEach(seccion => {
+                seccion.style.display = 'none';
+            });
+
+            const seccionSeleccionada = document.getElementById(nombreSeccion);
+            if (seccionSeleccionada) {
+                seccionSeleccionada.style.display = 'block';
+            }
+
+            // Desplazar al inicio de la página
+            window.scrollTo(0, 0);
+        }
+
+        // Formulario de contacto (solo simulación)
+        document.getElementById('formularioContacto').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Gracias por tu mensaje. Nos pondremos en contacto pronto.');
+        });
+    </script>
+</body>
+</html>
